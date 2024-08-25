@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <script>
+
+        let num1 = prompt("Ingresa el 1er número: ");
+        let num2 = prompt("Ingresa el 2do número: ");
+        let ope = prompt("Ingresa un signo para realizar la operación (por ejemplo, +, -, *, /): ")
+        
+
+        num1 = Number(num1)
+        num2 = Number(num2)
+
+        switch (ope) {
+        case "+":
+            resultado = num1 + num2;
+            enunciado = ("El resultado de la + es: " );
+            break;
+        case "-":
+            resultado = num1 - num2;
+            enunciado = ("El resultado de la - es: " );
+            break;
+        case "*":
+            resultado = num1 * num2;
+            enunciado = ("El resultado de la * es: " );
+            break;
+        case "/":
+            resultado = num1 / num2;
+            enunciado = ("El resultado de la / es: " );
+            break;
+        default:
+            enunciado = ("Signo no válido." );
+        }
+
+        alert(enunciado + resultado )
+        console.log(enunciado + resultado)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
